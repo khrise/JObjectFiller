@@ -10,8 +10,9 @@ public class SimpleClassTest {
     public void testCreateAndFillUser() {
 
         Filler<User> filler = new Filler<User>();
-        User user = filler.Create(User.class);
+        User user = filler.create(User.class);
 
+        assertNotNull(user.getAddress());
         assertNotNull(user.getFirstName());
         assertNotEquals("", user.getFirstName());
 

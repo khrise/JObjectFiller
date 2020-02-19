@@ -6,6 +6,7 @@ public class User {
     private int age;
     private String firstName;
     private UUID userId;
+    private Address address;
 
     public int getAge() {
         return age;
@@ -29,5 +30,13 @@ public class User {
 
     public void setUserId(UUID userId) {
         this.userId = userId;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
